@@ -1,3 +1,60 @@
+# 🩺 Medical Chatbot using RAG
+
+A Streamlit-based Medical RAG chatbot that retrieves relevant passages from medical documents and generates grounded answers using a Groq LLM.
+
+The starter knowledge base is `diabetes.pdf`. Additional PDF and TXT documents can be uploaded from the sidebar.
+
+## 🚀 Live Demo
+
+**[Open Medical RAG Chatbot](https://medical-chatbot-rag-711b.onrender.com)**
+
+## ✨ Features
+
+- Retrieval-Augmented Generation (RAG) for document-based question answering.
+- Local ONNX embeddings using FastEmbed with `all-MiniLM-L6-v2`.
+- PyTorch is not required.
+- NumPy-based local vector storage and cosine-similarity search.
+- Groq LLM for generating answers from retrieved document context.
+- Source references displayed with answers.
+- Supports PDF and TXT document uploads.
+- Automatic indexing of the starter `diabetes.pdf`.
+- Streamlit-based interactive chat interface.
+- Docker-ready for cloud deployment.
+
+## 🛠️ Tech Stack
+
+- Python
+- Streamlit
+- LangChain
+- FastEmbed
+- ONNX Runtime
+- NumPy
+- PyPDF
+- Groq
+- Docker
+- Render
+
+## 📁 Project Structure
+
+```text
+medical-chatbot-rag/
+│
+├── app.py
+├── medical_rag.py
+├── diabetes.pdf
+├── requirements.txt
+├── pyproject.toml
+├── uv.lock
+├── Dockerfile
+├── .dockerignore
+├── .env.example
+├── run_app.bat
+│
+├── new_articles/
+├── tests/
+│
+└── README.md
+
 # Medical Chatbot using RAG
 
 A Streamlit chatbot that retrieves passages from medical documents before answering.
