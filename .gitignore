@@ -1,5 +1,10 @@
-venv/
 .env
-chroma_db/
+.venv/
 __pycache__/
-.ipynb_checkpoints/
+vector_db/
+chroma_manual/
+chroma_test/
+chroma_test2/
+pure_chroma_fastembed/
+pure_chroma_test/
+.vscode/
