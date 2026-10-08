@@ -1,0 +1,11 @@
+.env
+.venv
+__pycache__
+.git
+.gitignore
+.vscode
+chroma_manual
+chroma_test
+chroma_test2
+pure_chroma_fastembed
+pure_chroma_test
