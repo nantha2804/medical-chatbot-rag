@@ -122,7 +122,7 @@ def create_embeddings(texts: list[str]) -> np.ndarray:
     embeddings = FastEmbedEmbeddings(
         model_name=EMBEDDING_MODEL,
         max_length=256,
-        batch_size=32,
+        batch_size=8,
     )
 
     vectors = embeddings.embed_documents(texts)
